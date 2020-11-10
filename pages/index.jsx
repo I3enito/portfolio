@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import classNames from "classnames";
 import styles from "../styles/Home.module.css";
 
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>ben|siegenthaler</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
@@ -15,10 +16,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2 className={classNames(styles.stylizedTitle, styles.about)}>
-          about
+          <Link href="/about">about</Link>
         </h2>
         <h2 className={classNames(styles.stylizedTitle, styles.work)}>
-          work
+          <Link href="/work">work</Link>
         </h2>
       </main>
 
