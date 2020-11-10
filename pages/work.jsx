@@ -25,7 +25,7 @@ export default function Home() {
             <div className={styles.imageContainer}>
               <Image
                 src="/images/web-pinball.png"
-                alt="Picture of the author"
+                alt="Pinball Game Screenshot"
                 layout="responsive"
                 height={1834}
                 width={2499}
@@ -51,6 +51,17 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <footer>
+        <button className={styles.arrowButtonLeft}>
+          <Image
+            src="/icons/arrow-light.svg"
+            alt="Pinball Game Screenshot"
+            layout="responsive"
+            height={12}
+            width={12}
+          ></Image>
+        </button>
+      </footer>
 
       {/* <footer className={styles.footer}>
         <a
