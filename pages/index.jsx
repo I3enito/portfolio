@@ -19,7 +19,7 @@ export default function Home() {
           <Link href="/about">about</Link>
         </h2>
         <h2 className={classNames(styles.stylizedTitle, styles.work)}>
-          <Link href="/work">work</Link>
+          <Link href="/work?page=1">work</Link>
         </h2>
       </main>
 

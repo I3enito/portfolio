@@ -21,6 +21,12 @@
   flex-basis: auto;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.pageTitle:hover {
+  color: #1b1d28;
 }
 
 .title {
@@ -47,6 +53,7 @@
   flex-grow: 0;
   flex-basis: 100%;
   margin-top: 40px;
+  min-height: 60vh;
 }
 
 .leftColumn {
@@ -96,13 +103,33 @@
   font-size: 18px;
 }
 
-.arrowButtonLeft {
-  height: 40px;
-  width: 40px;
+.arrowButton {
+  height: 32px;
+  width: 32px;
   outline: none;
   background: transparent;
   appearance: none;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+
+.arrowButton.left {
   transform: rotateZ(180deg);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNumber {
+  color: #ebebeb;
+  font-weight: 500;
+  font-size: 36px;
+  width: 100px;
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 4px;
 }

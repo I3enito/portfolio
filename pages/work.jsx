@@ -1,10 +1,25 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import classNames from "classnames";
 import Image from "next/image";
 import styles from "../styles/Work.module.css";
+import { WebPinball } from "../components/Work/Pages/WebPinball";
+import { GigantischGeilesGame } from "../components/Work/Pages/GigantischGeilesGame";
 
 export default function Home() {
+  const { query, push } = useRouter();
+  const { page = "1" } = query;
+  const currentIndex = parseInt(page);
+
+  const activePage = (index) => {
+    switch (index) {
+      case 1:
+        return <WebPinball></WebPinball>;
+      case 2:
+        return <GigantischGeilesGame></GigantischGeilesGame>;
+    }
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -12,50 +27,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
-        <h1 className={styles.pageTitle}>work</h1>
+        <Link href="/">
+          <h1 className={styles.pageTitle}>work</h1>
+        </Link>
         <h1 className={styles.title}>ben|siegenthaler</h1>
       </header>
 
-      <main className={styles.main}>
-        <div className={styles.highlightContainer}>
-          <h3 className={styles.styledH3}>web pinball</h3>
-        </div>
-        <div className={styles.flexContainer}>
-          <div className={styles.leftColumn}>
-            <div className={styles.imageContainer}>
-              <Image
-                src="/images/web-pinball.png"
-                alt="Pinball Game Screenshot"
-                layout="responsive"
-                height={1834}
-                width={2499}
-              />
-            </div>
-          </div>
-
-          <div className={styles.rightColumn}>
-            <div className={styles.highlightContainerSmall}>
-              <h4 className={styles.styledH4}>description</h4>
-            </div>
-            <p className={styles.paragraph}>
-              In a web studio during my studies, we had the challenge of
-              programming a pinball with plain html, javascript and css. The
-              real world factor in this project was rather small, but it was fun
-              to write my own collision detection while observing the limits of
-              html5.
-            </p>
-            <div className={styles.highlightContainerSmall}>
-              <h4 className={styles.styledH4}>technologies</h4>
-            </div>
-            <p className={styles.paragraph}>html5, css3, javascript</p>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <button className={styles.arrowButtonLeft}>
+      <main className={styles.main}>{activePage(currentIndex)}</main>
+      <footer className={styles.footer}>
+        <button
+          className={classNames(styles.arrowButton, styles.left)}
+          onClick={() => {
+            push(`?page=${currentIndex - 1}`);
+          }}
+        >
           <Image
             src="/icons/arrow-light.svg"
-            alt="Pinball Game Screenshot"
+            alt="Arrow Pointing Left"
+            layout="responsive"
+            height={12}
+            width={12}
+          ></Image>
+        </button>
+        <span className={styles.pageNumber}>0{currentIndex}</span>
+        <button
+          className={classNames(styles.arrowButton)}
+          onClick={() => {
+            push(`?page=${currentIndex + 1}`);
+          }}
+        >
+          <Image
+            src="/icons/arrow-light.svg"
+            alt="Arrow Pointing Right"
             layout="responsive"
             height={12}
             width={12}
