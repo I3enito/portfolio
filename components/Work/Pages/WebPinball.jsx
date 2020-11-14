@@ -35,6 +35,30 @@ export const WebPinball = () => {
             <h4 className={styles.styledH4}>technologies</h4>
           </div>
           <p className={styles.paragraph}>html5, css3, javascript</p>
+          <div className={styles.highlightContainerSmall}>
+            <h4 className={styles.styledH4}>contribution</h4>
+          </div>
+          <p className={styles.paragraph}>concept, design, programming</p>
+          <div className={styles.highlightContainerSmall}>
+            <h4 className={styles.styledH4}>resources</h4>
+          </div>
+          <p className={styles.paragraph}>
+            <a
+              href="https://i3enito.github.io/DEWEBMO.F2001/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              live demo
+            </a>
+            ,{" "}
+            <a
+              href="https://github.com/I3enito/DEWEBMO.F2001"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              source code
+            </a>
+          </p>
         </div>
       </div>
     </>

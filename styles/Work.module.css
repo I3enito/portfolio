@@ -5,49 +5,12 @@
   padding: 0 20px;
 }
 
-.header {
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.pageTitle {
-  color: #ebebeb;
-  font-size: 72px;
-  font-weight: bold;
-  flex-basis: 100%;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  transition: color 0.5s ease;
-  text-align: center;
-}
-
-.pageTitle:hover {
-  color: #1b1d28;
-}
-
-.title {
-  font-size: 24px;
-  color: #ebebeb;
-  text-align: center;
-  flex-basis: auto;
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-}
-
 .main {
   max-width: 1400px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 56px;
   padding-bottom: 120px;
 }
 
@@ -104,7 +67,11 @@
 
 .paragraph {
   color: #1b1d28;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.paragraph a {
+  text-decoration: underline;
 }
 
 .arrowButton {
@@ -133,7 +100,6 @@
   height: 120px;
   padding: 40px;
   background: linear-gradient(#c4c4c400, #c4c4c4c4, #c4c4c4ee, #c4c4c4);
-  
 }
 
 .pageNumber {
@@ -150,6 +116,10 @@
   .header {
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+
+  .main {
+    margin-top: 80px;
   }
 
   .pageTitle {
@@ -180,5 +150,9 @@
   }
   .styledH4 {
     font-size: 24px;
+  }
+
+  .paragraph {
+    font-size: 18px;
   }
 }

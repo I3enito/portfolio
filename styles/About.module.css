@@ -1,0 +1,15 @@
+.container {
+  min-height: 100vh;
+  display: block;
+  background: #1b1d28;
+  padding: 0 20px;
+}
+
+.header h1,
+.header h2 {
+  color: #c4c4c4;
+}
+
+.header h1:hover {
+  color: #ebebeb;
+}

@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pageTitle {
+  color: #ebebeb;
+  font-size: 72px;
+  font-weight: bold;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  text-align: center;
+}
+
+.pageTitle:hover {
+  color: #1b1d28;
+}
+
+.title {
+  font-size: 24px;
+  color: #ebebeb;
+  text-align: center;
+  flex-basis: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  .header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .pageTitle {
+    font-size: 96px;
+    flex-basis: auto;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}

@@ -6,11 +6,17 @@ import Image from "next/image";
 import styles from "../styles/Work.module.css";
 import { WebPinball } from "../components/Work/Pages/WebPinball";
 import { GigantischGeilesGame } from "../components/Work/Pages/GigantischGeilesGame";
+import { useEffect } from "react";
+import { Header } from "../components/Header/Header";
 
 export default function Home() {
   const { query, push } = useRouter();
   const { page = "1" } = query;
   const currentIndex = parseInt(page);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   const activePage = (index) => {
     switch (index) {
@@ -26,12 +32,7 @@ export default function Home() {
         <title>ben|siegenthaler|work</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <Link href="/">
-          <h1 className={styles.pageTitle}>work</h1>
-        </Link>
-        <h1 className={styles.title}>ben|siegenthaler</h1>
-      </header>
+      <Header pageTitle="work"></Header>
 
       <main className={styles.main}>{activePage(currentIndex)}</main>
       <footer className={styles.footer}>
@@ -65,17 +66,6 @@ export default function Home() {
           ></Image>
         </button>
       </footer>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer> */}
     </div>
   );
 }
