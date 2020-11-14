@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: block;
   background-color: #c4c4c4;
+  padding: 0 20px;
 }
 
 .header {
@@ -10,19 +11,21 @@
   margin: auto;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .pageTitle {
   color: #ebebeb;
-  font-size: 96px;
+  font-size: 72px;
   font-weight: bold;
-  flex-basis: auto;
+  flex-basis: 100%;
   margin: 0;
   padding: 0;
   cursor: pointer;
   transition: color 0.5s ease;
+  text-align: center;
 }
 
 .pageTitle:hover {
@@ -30,7 +33,7 @@
 }
 
 .title {
-  font-size: 36px;
+  font-size: 24px;
   color: #ebebeb;
   text-align: center;
   flex-basis: auto;
@@ -45,6 +48,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
+  padding-bottom: 120px;
 }
 
 .flexContainer {
@@ -53,19 +57,19 @@
   flex-grow: 0;
   flex-basis: 100%;
   margin-top: 40px;
-  min-height: 60vh;
 }
 
 .leftColumn {
   display: block;
-  flex-basis: 50%;
-  padding-right: 32px;
+  flex-basis: 100%;
+  padding: 0;
 }
 
 .rightColumn {
   display: block;
-  flex-basis: 50%;
-  padding-left: 32px;
+  flex-basis: 100%;
+  padding: 0;
+  margin-top: 32px;
 }
 
 .highlightContainer {
@@ -82,14 +86,14 @@
 .styledH3 {
   color: #c4c4c4;
   margin: 0;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .styledH4 {
   color: #c4c4c4;
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -122,6 +126,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 40px;
+  background: linear-gradient(#c4c4c400, #c4c4c4c4, #c4c4c4ee, #c4c4c4);
+  
 }
 
 .pageNumber {
@@ -132,4 +144,41 @@
   text-align: center;
   line-height: 1;
   padding-bottom: 4px;
+}
+
+@media (min-width: 800px) {
+  .header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .pageTitle {
+    font-size: 96px;
+    flex-basis: auto;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+  .rightColumn {
+    margin: 0;
+    flex-basis: 50%;
+    padding-left: 32px;
+  }
+  .leftColumn {
+    flex-basis: 50%;
+    padding-right: 32px;
+  }
+
+  .styledH3 {
+    font-size: 36px;
+  }
+  .styledH4 {
+    font-size: 24px;
+  }
 }
