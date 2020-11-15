@@ -13,3 +13,55 @@
 .header h1:hover {
   color: #ebebeb;
 }
+
+.main {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  padding-bottom: 120px;
+}
+
+.leftColumn {
+  display: block;
+  flex-basis: 100%;
+  padding: 0;
+}
+
+.imageContainer {
+  max-width: 400px;
+  margin: auto;
+}
+
+.paragraph {
+  color:  #c4c4c4;
+}
+
+.rightColumn {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.rightColumn div {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .main {
+    margin-top: 80px;
+  }
+
+  .rightColumn {
+    margin: 0;
+    flex-basis: 50%;
+    padding-left: 32px;
+  }
+  .leftColumn {
+    flex-basis: 50%;
+    padding-right: 32px;
+  }
+}
