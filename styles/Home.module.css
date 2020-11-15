@@ -57,21 +57,6 @@
   transition: 0.4s all ease;
   cursor: default;
 }
-
-.socialLink {
-  height: 32px;
-  width: 32px;
-  display: block;
-  margin: 0 12px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  align-items: center;
-}
-
 .about.stylizedTitle::after {
   transform: rotate(-2deg) translate(-50%, -50%);
 }

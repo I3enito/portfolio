@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
+import { Paragraph } from "../../Paragraph/Paragraph";
 
 export const GigantischGeilesGame = () => {
   return (
@@ -12,7 +13,6 @@ export const GigantischGeilesGame = () => {
           <div className={styles.imageContainer}>
             <iframe
               width="100%"
-              height="360"
               src="https://www.youtube-nocookie.com/embed/Ca1UptqNroE"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -25,17 +25,17 @@ export const GigantischGeilesGame = () => {
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>description</h4>
           </div>
-          <p className={styles.paragraph}>
+          <Paragraph>
             In a web studio during my studies, we had the challenge of
             programming a pinball with plain html, javascript and css. The real
             world factor in this project was rather small, but it was fun to
             write my own collision detection while observing the limits of
             html5.
-          </p>
+          </Paragraph>
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>technologies</h4>
           </div>
-          <p className={styles.paragraph}>html5, css3, javascript</p>
+          <Paragraph>html5, css3, javascript</Paragraph>
         </div>
       </div>
     </>

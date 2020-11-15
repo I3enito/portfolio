@@ -1,7 +1,9 @@
 import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
+import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
+import { Paragraph } from "../components/Paragraph/Paragraph";
 import styles from "../styles/About.module.css";
 
 export default function About() {
@@ -29,17 +31,18 @@ export default function About() {
         </div>
         <div className={styles.rightColumn}>
           <div>
-            <p className={styles.paragraph}>Hey there!</p>
-            <p className={styles.paragraph}>
-              I'm a software engineer currently living and studying in lucerne,
-              swtzerland. I love the openness of the web and enjoy building
-              gaming experiences. I describe myself as a strong and ambitious
-              team player. If not busy with fixing some nasty bugs, you can find
-              me discussing about politics or enjoying the art of music.
-            </p>
+            <Paragraph light>Hi there</Paragraph>
+            <Paragraph light>
+              I am a software engineer who currently lives and studies in
+              Lucerne. I love the accessibility of web technologies and enjoy
+              building gaming experiences. I describe myself as a strong and
+              ambitious team player. Besides gaming and coding, I also like
+              discussions about politics and listening to good music.
+            </Paragraph>
           </div>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

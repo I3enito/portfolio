@@ -8,18 +8,32 @@ import { WebPinball } from "../components/Work/Pages/WebPinball";
 import { GigantischGeilesGame } from "../components/Work/Pages/GigantischGeilesGame";
 import { useEffect } from "react";
 import { Header } from "../components/Header/Header";
+import { GenerativeArt } from "../components/Work/Pages/GenerativeArt";
 
 export default function Home() {
   const { query, push } = useRouter();
   const { page = "1" } = query;
   const currentIndex = parseInt(page);
+  const PAGE_COUNT = 3;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [page]);
 
+  const handleClick = (direction) => {
+    if (direction === "up") {
+      const nextIndex = currentIndex + 1 <= PAGE_COUNT ? currentIndex + 1 : 0;
+      push(`?page=${nextIndex}`, undefined, true);
+    } else if (direction === "down") {
+      const nextIndex = currentIndex - 1 >= 0 ? currentIndex - 1 : PAGE_COUNT;
+      push(`?page=${nextIndex}`, undefined, true);
+    }
+  };
+
   const activePage = (index) => {
     switch (index) {
+      case 0:
+        return <GenerativeArt></GenerativeArt>;
       case 1:
         return <WebPinball></WebPinball>;
       case 2:
@@ -38,9 +52,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <button
           className={classNames(styles.arrowButton, styles.left)}
-          onClick={() => {
-            push(`?page=${currentIndex - 1}`);
-          }}
+          onClick={() => handleClick("down")}
         >
           <Image
             src="/icons/arrow-light.svg"
@@ -53,9 +65,7 @@ export default function Home() {
         <span className={styles.pageNumber}>0{currentIndex}</span>
         <button
           className={classNames(styles.arrowButton)}
-          onClick={() => {
-            push(`?page=${currentIndex + 1}`);
-          }}
+          onClick={() => handleClick("up")}
         >
           <Image
             src="/icons/arrow-light.svg"
