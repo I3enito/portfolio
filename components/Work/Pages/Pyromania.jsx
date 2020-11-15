@@ -2,18 +2,18 @@ import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
 
-export const GigantischGeilesGame = () => {
+export const Pyromania = () => {
   return (
     <>
       <div className={styles.highlightContainer}>
-        <h3 className={styles.styledH3}>gigantisch geiles game</h3>
+        <h3 className={styles.styledH3}>pyromania</h3>
       </div>
       <div className={styles.flexContainer}>
         <div className={styles.leftColumn}>
           <div className={styles.imageContainer}>
             <iframe
               width="100%"
-              src="https://www.youtube-nocookie.com/embed/Ca1UptqNroE"
+              src="https://www.youtube-nocookie.com/embed/5zIT4YbJLj4"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -26,11 +26,11 @@ export const GigantischGeilesGame = () => {
             <h4 className={styles.styledH4}>description</h4>
           </div>
           <Paragraph>
-            The "Giantisch Geiles Game" is a prototype of a 2D game, which we
-            developed as a team of three within 3 weeks. As a team of designers
-            and developers we developed the game mechanics and the game loop.
-            Despite little time and limited choice of game mechanics we managed
-            to create a great experience.
+            Pyromania is a local co-op multiplayer game for up to 4 people. You
+            are an totally competent firefighter who has to extinguish the
+            flames before it is too late. We worked for 2 weeks as a team of
+            three on this prototype. Still a lot of bugs, but that only adds to
+            the fun.
           </Paragraph>
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>technologies</h4>
@@ -39,7 +39,7 @@ export const GigantischGeilesGame = () => {
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>contribution</h4>
           </div>
-          <Paragraph>prototyping, development</Paragraph>
+          <Paragraph>idea, concept, prototyping, development</Paragraph>
         </div>
       </div>
     </>

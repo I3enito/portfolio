@@ -9,6 +9,7 @@ import { GigantischGeilesGame } from "../components/Work/Pages/GigantischGeilesG
 import { useEffect } from "react";
 import { Header } from "../components/Header/Header";
 import { GenerativeArt } from "../components/Work/Pages/GenerativeArt";
+import { Pyromania } from "../components/Work/Pages/Pyromania";
 
 export default function Home() {
   const { query, push } = useRouter();
@@ -38,6 +39,8 @@ export default function Home() {
         return <WebPinball></WebPinball>;
       case 2:
         return <GigantischGeilesGame></GigantischGeilesGame>;
+      case 3:
+        return <Pyromania></Pyromania>;
     }
   };
   return (
