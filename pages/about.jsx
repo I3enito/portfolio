@@ -33,11 +33,13 @@ export default function About() {
           <div>
             <Paragraph light>Hi there</Paragraph>
             <Paragraph light>
-              I am a software engineer who currently lives and studies in
-              Lucerne. I love the accessibility of web technologies and enjoy
-              building gaming experiences. I describe myself as a strong and
-              ambitious team player. Besides gaming and coding, I also like
-              discussions about politics and listening to good music.
+              I am a software engineer who feels at home in web and game
+              development. I am fascinated by the accessibility of web
+              technologies and the creative possibilities of games. Besides the
+              urge to learn new things, I am characterized by the ability to
+              work in teams and to take responsibility. In my free time you can
+              find me snowboarding, at good concerts, climbing or hanging out
+              with friends in a bar.
             </Paragraph>
           </div>
         </div>

@@ -10,12 +10,15 @@ import { useEffect } from "react";
 import { Header } from "../components/Header/Header";
 import { GenerativeArt } from "../components/Work/Pages/GenerativeArt";
 import { Pyromania } from "../components/Work/Pages/Pyromania";
+import { Wonigo } from "../components/Work/Pages/Wonigo";
+import { Freekickerz } from "../components/Work/Pages/Freekickerz";
+import { CoffeeManiac } from "../components/Work/Pages/CoffeeManiac";
 
 export default function Home() {
   const { query, push } = useRouter();
   const { page = "1" } = query;
   const currentIndex = parseInt(page);
-  const PAGE_COUNT = 3;
+  const PAGE_COUNT = 6;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,13 +37,19 @@ export default function Home() {
   const activePage = (index) => {
     switch (index) {
       case 0:
-        return <GenerativeArt></GenerativeArt>;
+        return <Wonigo></Wonigo>;
       case 1:
-        return <WebPinball></WebPinball>;
+        return <Freekickerz></Freekickerz>;
       case 2:
-        return <GigantischGeilesGame></GigantischGeilesGame>;
+        return <CoffeeManiac></CoffeeManiac>;
       case 3:
         return <Pyromania></Pyromania>;
+      case 4:
+        return <WebPinball></WebPinball>;
+      case 5:
+        return <GenerativeArt></GenerativeArt>;
+      case 6:
+        return <GigantischGeilesGame></GigantischGeilesGame>;
     }
   };
   return (
