@@ -16,10 +16,6 @@ export default function About() {
         <meta name="description" content="Learn more about Ben Siegenthaler." />
 
         <meta property="og:type" content="website"></meta>
-        <meta
-          property="og:url"
-          content="https://bensiegenthaler.ch/about"
-        ></meta>
         <meta property="og:title" content="ben|siegenthaler|about"></meta>
         <meta
           property="og:description"

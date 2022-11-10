@@ -17,7 +17,6 @@ export default function Home() {
           content="Personal website of Ben Siegenthaler, software engineer with focus on web and game development."
         />
         <meta property="og:type" content="website"></meta>
-        <meta property="og:url" content="https://bensiegenthaler.ch/"></meta>
         <meta property="og:title" content="ben|siegenthaler"></meta>
         <meta
           property="og:description"
