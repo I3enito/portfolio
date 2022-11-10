@@ -14,6 +14,18 @@ export default function About() {
         <meta charset="utf-8" />
         <meta name="author" content="Ben Siegenthaler" />
         <meta name="description" content="Learn more about Ben Siegenthaler." />
+
+        <meta property="og:type" content="website"></meta>
+        <meta
+          property="og:url"
+          content="https://bensiegenthaler.ch/about"
+        ></meta>
+        <meta property="og:title" content="ben|siegenthaler|about"></meta>
+        <meta
+          property="og:description"
+          content="Learn more about Ben Siegenthaler."
+        ></meta>
+        <meta property="og:image" content="/images/icon-512x512.png"></meta>
       </Head>
       <Header className={styles.header} pageTitle="about"></Header>
 

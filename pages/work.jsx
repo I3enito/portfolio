@@ -58,6 +58,17 @@ export default function Home() {
         <meta charset="utf-8" />
         <meta name="author" content="Ben Siegenthaler" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:type" content="website"></meta>
+        <meta
+          property="og:url"
+          content="https://bensiegenthaler.ch/work"
+        ></meta>
+        <meta property="og:title" content="ben|siegenthaler|work"></meta>
+        <meta
+          property="og:description"
+          content="Get an overview of the work of Ben Siegenthaler."
+        ></meta>
+        <meta property="og:image" content="/images/icon-512x512.png"></meta>
       </Head>
       <Header pageTitle="work"></Header>
 

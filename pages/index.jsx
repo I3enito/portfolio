@@ -14,8 +14,16 @@ export default function Home() {
         <meta name="author" content="Ben Siegenthaler" />
         <meta
           name="description"
-          content="Personal website of Ben Siegenthaler, software engineer with focus on web and game enigeering."
+          content="Personal website of Ben Siegenthaler, software engineer with focus on web and game development."
         />
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://bensiegenthaler.ch/"></meta>
+        <meta property="og:title" content="ben|siegenthaler"></meta>
+        <meta
+          property="og:description"
+          content="Personal website of Ben Siegenthaler, software engineer with focus on web and game development."
+        ></meta>
+        <meta property="og:image" content="/images/icon-512x512.png"></meta>
       </Head>
       <header className={styles.header}>
         <h1 className={styles.title}>ben|siegenthaler</h1>
