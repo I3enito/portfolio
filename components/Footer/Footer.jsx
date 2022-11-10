@@ -22,7 +22,7 @@ export const Footer = () => {
       </a>
       <a
         className={classNames(styles.socialLink)}
-        href="https://www.linkedin.com/in/ben-siegenthaler-6837781a1"
+        href="https://www.linkedin.com/in/ben-siegenthaler/"
         target="_blank"
         rel="noreferrer noopener"
       >
