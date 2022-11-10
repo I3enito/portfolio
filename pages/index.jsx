@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import classNames from "classnames";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import { Footer } from "../components/Footer/Footer";
 
 export default function Home() {
@@ -11,6 +10,12 @@ export default function Home() {
       <Head>
         <title>ben|siegenthaler</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charset="utf-8" />
+        <meta name="author" content="Ben Siegenthaler" />
+        <meta
+          name="description"
+          content="Personal website of Ben Siegenthaler, software engineer with focus on web and game enigeering."
+        />
       </Head>
       <header className={styles.header}>
         <h1 className={styles.title}>ben|siegenthaler</h1>

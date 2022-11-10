@@ -1,10 +1,18 @@
-import Image from "next/image";
+import Head from "next/head";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
 
 export const Wonigo = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Get an overview of the work of Ben Siegenthaler: Wonigo is a modern web platform for flat-sharing communities that
+          models, simplifies and accelerates the central processes of finding
+          flatmates."
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>wonigo</h3>
       </div>
@@ -15,9 +23,9 @@ export const Wonigo = () => {
               width="100%"
               src="https://www.youtube.com/embed/EbPPgOfqZNE"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
@@ -5,6 +6,12 @@ import { Paragraph } from "../../Paragraph/Paragraph";
 export const GenerativeArt = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Get an overview of the work of Ben Siegenthaler: Generative art."
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>generative art</h3>
       </div>

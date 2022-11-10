@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
@@ -5,6 +6,13 @@ import { Paragraph } from "../../Paragraph/Paragraph";
 export const CoffeeManiac = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Get an overview of the work of Ben Siegenthaler: In Coffee Maniac you can experience the joy of drinking coffee in
+          the morning."
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>Coffee Maniac</h3>
       </div>
@@ -15,9 +23,9 @@ export const CoffeeManiac = () => {
               width="100%"
               src="https://www.youtube.com/embed/Yg2n8-5DQwk"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
@@ -32,7 +40,7 @@ export const CoffeeManiac = () => {
             but don't spill it! With each caffeine delivery, you move faster and
             less predictable. Enter the trip phase and become one with the
             coffee. This game was created by two other team members and me in
-            five days at the Workshop "Inbetween Animation and Gamedesign" at
+            five days at the workshop "Inbetween Animation and Gamedesign" at
             Fantoche 2021.
           </Paragraph>
           <div className={styles.highlightContainerSmall}>

@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import { Footer } from "../components/Footer/Footer";
@@ -12,6 +11,9 @@ export default function About() {
       <Head>
         <title>ben|siegenthaler|about</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charset="utf-8" />
+        <meta name="author" content="Ben Siegenthaler" />
+        <meta name="description" content="Learn more about Ben Siegenthaler." />
       </Head>
       <Header className={styles.header} pageTitle="about"></Header>
 

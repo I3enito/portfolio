@@ -1,10 +1,16 @@
-import Image from "next/image";
+import Head from "next/head";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
 
 export const Pyromania = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Get an overview of the work of Ben Siegenthaler: Pyromania is a local co-op multiplayer game for up to 4 people."
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>pyromania</h3>
       </div>
@@ -14,7 +20,7 @@ export const Pyromania = () => {
             <iframe
               width="100%"
               src="https://www.youtube-nocookie.com/embed/5zIT4YbJLj4"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

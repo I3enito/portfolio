@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
@@ -5,6 +6,13 @@ import { Paragraph } from "../../Paragraph/Paragraph";
 export const Freekickerz = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Get an overview of the work of Ben Siegenthaler: Freekickerz Shootout is a casual skill
+          game where you can challenge your friends."
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>Freekickerz Shootout</h3>
       </div>
@@ -39,7 +47,7 @@ export const Freekickerz = () => {
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>contribution</h4>
           </div>
-          <Paragraph>concept, game design, technical implementations</Paragraph>
+          <Paragraph>concept, game design, technical implementation</Paragraph>
           <div className={styles.highlightContainerSmall}>
             <h4 className={styles.styledH4}>resources</h4>
           </div>

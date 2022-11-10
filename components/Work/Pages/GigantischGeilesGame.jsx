@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../../../styles/Work.module.css";
 import { Paragraph } from "../../Paragraph/Paragraph";
@@ -5,6 +6,13 @@ import { Paragraph } from "../../Paragraph/Paragraph";
 export const GigantischGeilesGame = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content='Get an overview of the work of Ben Siegenthaler: The "Giantisch Geiles Game" is a prototype of a 2D game, which we
+          developed as a team of three within 3 weeks.'
+        />
+      </Head>
       <div className={styles.highlightContainer}>
         <h3 className={styles.styledH3}>gigantisch geiles game</h3>
       </div>
@@ -14,7 +22,7 @@ export const GigantischGeilesGame = () => {
             <iframe
               width="100%"
               src="https://www.youtube-nocookie.com/embed/Ca1UptqNroE"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

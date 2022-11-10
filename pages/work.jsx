@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import classNames from "classnames";
 import Image from "next/image";
@@ -18,7 +17,7 @@ export default function Home() {
   const { query, push } = useRouter();
   const { page = "1" } = query;
   const currentIndex = parseInt(page);
-  const PAGE_COUNT = 6;
+  const PAGE_COUNT = 5;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,17 +37,17 @@ export default function Home() {
     switch (index) {
       case 0:
         return <Wonigo></Wonigo>;
+      // case 1:
+      //   return <Freekickerz></Freekickerz>;
       case 1:
-        return <Freekickerz></Freekickerz>;
-      case 2:
         return <CoffeeManiac></CoffeeManiac>;
-      case 3:
+      case 2:
         return <Pyromania></Pyromania>;
-      case 4:
+      case 3:
         return <WebPinball></WebPinball>;
-      case 5:
+      case 4:
         return <GenerativeArt></GenerativeArt>;
-      case 6:
+      case 5:
         return <GigantischGeilesGame></GigantischGeilesGame>;
     }
   };
@@ -56,6 +55,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>ben|siegenthaler|work</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Ben Siegenthaler" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header pageTitle="work"></Header>
