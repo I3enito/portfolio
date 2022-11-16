@@ -17,7 +17,7 @@ export default function Home() {
   const { query, push } = useRouter();
   const { page = "1" } = query;
   const currentIndex = parseInt(page);
-  const PAGE_COUNT = 5;
+  const PAGE_COUNT = 6;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,17 +37,17 @@ export default function Home() {
     switch (index) {
       case 0:
         return <Wonigo></Wonigo>;
-      // case 1:
-      //   return <Freekickerz></Freekickerz>;
       case 1:
-        return <CoffeeManiac></CoffeeManiac>;
+        return <Freekickerz></Freekickerz>;
       case 2:
-        return <Pyromania></Pyromania>;
+        return <CoffeeManiac></CoffeeManiac>;
       case 3:
-        return <WebPinball></WebPinball>;
+        return <Pyromania></Pyromania>;
       case 4:
-        return <GenerativeArt></GenerativeArt>;
+        return <WebPinball></WebPinball>;
       case 5:
+        return <GenerativeArt></GenerativeArt>;
+      case 6:
         return <GigantischGeilesGame></GigantischGeilesGame>;
     }
   };
