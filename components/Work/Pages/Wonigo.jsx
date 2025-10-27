@@ -63,7 +63,7 @@ export const Wonigo = () => {
           </div>
           <Paragraph>
             <a
-              href="https://wonigo-test.ams3.cdn.digitaloceanspaces.com/documentation/wonigo-architecture.png"
+              href="https://1drv.ms/u/c/794ec0a0717d9b60/EVv9uKwAizJIrw2zgYQZsrQBE5cyeyKNeGDoBtfO4Ra2Pg?e=1sjLnZ"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -71,7 +71,7 @@ export const Wonigo = () => {
             </a>
             ,{" "}
             <a
-              href="https://wonigo-test.ams3.cdn.digitaloceanspaces.com/documentation/A1_wonigo_plakat_n1_v2.pdf"
+              href="https://1drv.ms/b/c/794ec0a0717d9b60/Ee8hznup5C5AvYn8rbmjwqYBNYOVDCXoL1MuIqFEsE61mw?e=glUpX2"
               target="_blank"
               rel="noreferrer noopener"
             >
