@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter, useSearchParams } from "next/navigation";
 import classNames from "classnames";
 import Image from "next/image";
 import styles from "../styles/Work.module.css";
@@ -14,8 +14,9 @@ import { Freekickerz } from "../components/Work/Pages/Freekickerz";
 import { CoffeeManiac } from "../components/Work/Pages/CoffeeManiac";
 
 export default function Home() {
-  const { query, push } = useRouter();
-  const { page = "1" } = query;
+  const { push } = useRouter();
+  const searchParams = useSearchParams()
+  const page = searchParams.get("page") ?? "1";
   const currentIndex = parseInt(page);
   const PAGE_COUNT = 6;
 
@@ -26,10 +27,10 @@ export default function Home() {
   const handleClick = (direction) => {
     if (direction === "up") {
       const nextIndex = currentIndex + 1 <= PAGE_COUNT ? currentIndex + 1 : 0;
-      push(`?page=${nextIndex}`, undefined, true);
+      push(`?page=${nextIndex}`);
     } else if (direction === "down") {
       const nextIndex = currentIndex - 1 >= 0 ? currentIndex - 1 : PAGE_COUNT;
-      push(`?page=${nextIndex}`, undefined, true);
+      push(`?page=${nextIndex}`);
     }
   };
 
