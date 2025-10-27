@@ -63,7 +63,7 @@ export const Wonigo = () => {
           </div>
           <Paragraph>
             <a
-              href="https://1drv.ms/u/c/794ec0a0717d9b60/EVv9uKwAizJIrw2zgYQZsrQBE5cyeyKNeGDoBtfO4Ra2Pg?e=1sjLnZ"
+              href="https://1drv.ms/i/c/794ec0a0717d9b60/EXcjSpbhIFlAv6RJKHaBgg0B7dltxkMj_1SOHJy0j-FIuA?e=r5JZQL"
               target="_blank"
               rel="noreferrer noopener"
             >
